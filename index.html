@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pocket Trader — Privacy Policy &amp; Terms of Use</title>
+    <title>Pocket Trader - App Info, Privacy Policy &amp; Terms of Use</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -16,7 +16,7 @@
         }
 
         .container {
-            max-width: 760px;
+            max-width: 820px;
             margin: 0 auto;
         }
 
@@ -31,10 +31,17 @@
             font-size: 2rem;
             font-weight: 700;
             color: #ffffff;
-            margin-bottom: 16px;
+            margin-bottom: 10px;
         }
 
-        header p {
+        .tagline {
+            max-width: 640px;
+            margin: 0 auto 18px;
+            color: #bdbdbd;
+            font-size: 1rem;
+        }
+
+        .updated {
             color: #888;
             font-size: 0.9rem;
             margin-top: 16px;
@@ -108,7 +115,7 @@
         }
 
         a {
-            color: #9b59b6;
+            color: #b879d6;
             text-decoration: none;
         }
 
@@ -116,10 +123,49 @@
             text-decoration: underline;
         }
 
+        .overview {
+            background: #111;
+            border: 1px solid #252525;
+            border-radius: 10px;
+            padding: 22px 24px;
+            margin-bottom: 28px;
+        }
+
+        .overview p:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin: 18px 0 0;
+        }
+
+        .feature {
+            background: #141414;
+            border: 1px solid #242424;
+            border-radius: 8px;
+            padding: 14px 16px;
+        }
+
+        .feature strong {
+            color: #fff;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .feature span {
+            color: #bdbdbd;
+            display: block;
+            font-size: 0.92rem;
+            line-height: 1.5;
+        }
+
         .card {
             background: #141414;
             border: 1px solid #222;
-            border-radius: 10px;
+            border-radius: 8px;
             padding: 20px 24px;
             margin: 12px 0;
         }
@@ -135,13 +181,44 @@
             font-size: 0.9rem;
         }
 
+        .note {
+            border-left: 3px solid #4fb286;
+            background: #0f1713;
+            color: #d5eadf;
+            padding: 14px 16px;
+            margin: 16px 0;
+        }
+
+        .note p {
+            color: #d5eadf;
+            margin: 0;
+        }
+
         footer {
             margin-top: 60px;
             padding-top: 24px;
             border-top: 1px solid #222;
             text-align: center;
             font-size: 0.85rem;
-            color: #555;
+            color: #777;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 28px 16px 64px;
+            }
+
+            header h1 {
+                font-size: 1.65rem;
+            }
+
+            nav.tabs .tab {
+                width: 100%;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -149,178 +226,239 @@
 <div class="container">
 
     <header>
-        <h1>Pocket Trader — Legal</h1>
+        <h1>Pocket Trader</h1>
+        <p class="tagline">
+            An unofficial companion app for Pokémon TCG Pocket players who want a clearer way
+            to organize cards, coordinate trades, and connect with other collectors.
+        </p>
         <nav class="tabs">
+            <a href="#app-info" class="tab">App Info</a>
             <a href="#privacy" class="tab">Privacy Policy</a>
+            <a href="#account-deletion" class="tab">Account Deletion</a>
             <a href="#terms" class="tab">Terms of Use</a>
         </nav>
-        <p>Last updated: April 29, 2026</p>
+        <p class="updated">Last updated: April 29, 2026</p>
     </header>
 
-    <!-- ════════════════════════════════════════════════════════════ -->
-    <!--                       PRIVACY POLICY                          -->
-    <!-- ════════════════════════════════════════════════════════════ -->
+    <section id="app-info">
+        <h2 class="section-heading">App Info</h2>
+
+        <div class="overview">
+            <p>
+                Pocket Trader helps Pokémon TCG Pocket players keep track of cards they want
+                to trade, find other players with compatible interests, and communicate about
+                potential trades. The app is designed as a coordination tool only; card
+                exchanges are completed by users in Pokémon TCG Pocket.
+            </p>
+            <p>
+                Pocket Trader is independent and fan-made. It is not affiliated with,
+                endorsed by, or sponsored by Nintendo, The Pokémon Company, Creatures Inc.,
+                GAME FREAK, or Pokémon TCG Pocket.
+            </p>
+
+            <div class="feature-list">
+                <div class="feature">
+                    <strong>Trade organization</strong>
+                    <span>Create a profile and organize cards you have or want to find.</span>
+                </div>
+                <div class="feature">
+                    <strong>Player coordination</strong>
+                    <span>Browse listings, review trader profiles, and coordinate offers.</span>
+                </div>
+                <div class="feature">
+                    <strong>Communication tools</strong>
+                    <span>Use in-app messaging and notifications to follow up on trades.</span>
+                </div>
+                <div class="feature">
+                    <strong>Optional extras</strong>
+                    <span>Participate in app giveaways and optional premium features where available.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider" />
+
     <section id="privacy">
         <h2 class="section-heading">Privacy Policy</h2>
 
         <p>
-            Pocket Trader ("we", "our", or "us") is an unofficial companion app for trading
-            Pokémon TCG Pocket cards. This Privacy Policy explains what information we collect,
-            how we use it, and your rights regarding your data. By using Pocket Trader you agree
-            to the practices described here.
+            Pocket Trader ("we", "our", or "us") provides an unofficial companion app for
+            coordinating Pokémon TCG Pocket card trades. This Privacy Policy explains what
+            information we collect, how we use and share it, how long we keep it, and the
+            choices available to you.
         </p>
 
-        <!-- ── 1. Information We Collect ── -->
         <h3>1. Information We Collect</h3>
 
         <p><strong>Account information</strong></p>
         <p>
-            When you sign in with Google or Apple, we receive your email address and a unique
-            identifier from that provider. We store a public-facing username, friend code, and
-            avatar that you set yourself.
+            When you sign in with Google or Apple, we receive account information from that
+            provider, such as a unique account identifier and, where provided, your email
+            address. We also store profile information you choose to add, such as a display
+            name, Pokémon TCG Pocket friend code, avatar, and language preference.
         </p>
 
-        <p><strong>Content you create</strong></p>
+        <p><strong>Content you create or submit</strong></p>
         <ul>
-            <li>Trade listings — the cards you mark as "have" or "want"</li>
-            <li>Chat messages sent between trading partners</li>
-            <li>Likes you leave after completing a trade</li>
-            <li>Feedback text submitted through the app</li>
-            <li>Card name translation suggestions you submit</li>
+            <li>Trade listings, including cards you mark as available or wanted</li>
+            <li>Trade offers and trade status information</li>
+            <li>Messages sent to other users through the app</li>
+            <li>Feedback, trade reactions, and card name suggestions you submit</li>
+            <li>Giveaway entries and related ticket activity</li>
         </ul>
 
-        <p><strong>Usage and device data</strong></p>
+        <p><strong>Usage, purchase, and device information</strong></p>
         <ul>
-            <li>Language preference</li>
-            <li>Expo push notification token (to deliver trade and message alerts)</li>
-            <li>Giveaway entries and ticket balance</li>
+            <li>Push notification tokens and notification preferences</li>
+            <li>Premium subscription status and purchase entitlement information</li>
+            <li>Rewarded ad activity needed to determine whether a giveaway ticket was earned</li>
+            <li>Basic technical information needed to operate, secure, and troubleshoot the app</li>
         </ul>
 
         <p>
-            We do <strong>not</strong> collect precise location, contacts, photos, or any data
-            unrelated to the trading features above.
+            We do not request precise location, contacts, photos, camera access, or microphone
+            access for Pocket Trader's trading features.
         </p>
 
-        <!-- ── 2. How We Use Your Information ── -->
-        <h3>2. How We Use Your Information</h3>
+        <h3>2. How We Use Information</h3>
         <ul>
-            <li>Authenticate you and display your public profile to other traders</li>
-            <li>Match trade listings and facilitate card exchanges between users</li>
-            <li>Deliver push notifications for trades, messages, and giveaways</li>
-            <li>Provide customer support and improve the app based on feedback</li>
-            <li>Process premium subscription purchases and restore entitlements</li>
-            <li>Show rewarded video ads so you can earn giveaway tickets</li>
+            <li>Authenticate accounts and maintain user profiles</li>
+            <li>Display public profile and listing information to other users</li>
+            <li>Coordinate trade listings, offers, chats, and related notifications</li>
+            <li>Provide giveaways, ticket balances, and optional rewarded ad features</li>
+            <li>Process, validate, and restore premium subscription entitlements</li>
+            <li>Respond to support requests, feedback, abuse reports, and legal requests</li>
+            <li>Protect the app, prevent misuse, debug issues, and improve app reliability</li>
         </ul>
 
-        <p>We do not sell your personal information to any third party.</p>
-
-        <!-- ── 3. Third-Party Services ── -->
-        <h3>3. Third-Party Services</h3>
         <p>
-            Pocket Trader uses the following third-party services. Each operates under its own
-            privacy policy.
+            We do not sell your personal information. We do not request permission to track
+            you across other companies' apps and websites for targeted advertising.
+        </p>
+
+        <h3>3. Public and User-Generated Content</h3>
+        <p>
+            Some information you provide is visible to other users, including your display
+            name, avatar, trade-related profile details, public listings, and information
+            needed to coordinate a trade. Messages are visible to the users participating in
+            that conversation. Do not submit information that you do not want other applicable
+            users to see.
+        </p>
+
+        <h3>4. Third-Party Services</h3>
+        <p>
+            Pocket Trader uses third-party services to operate the app. These providers may
+            process information as needed to provide their services and are governed by their
+            own privacy policies.
         </p>
 
         <div class="card">
             <strong>Supabase</strong>
             <p>
-                Our backend database and authentication provider. All user data described above
-                is stored on Supabase servers (US West region).
-                <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>
+                Provides database, authentication, storage, and server-side app functions.
+                <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>
             </p>
         </div>
 
         <div class="card">
             <strong>Google Sign-In</strong>
             <p>
-                Used for account authentication. Google may share your email and profile ID with
-                us upon sign-in.
-                <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+                Used for account authentication when you choose Google sign-in.
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
             </p>
         </div>
 
         <div class="card">
             <strong>Apple Sign-In</strong>
             <p>
-                Used for account authentication on iOS. Apple may share a private relay email
-                and user identifier with us.
-                <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a>
+                Used for account authentication when you choose Apple sign-in.
+                <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>
             </p>
         </div>
 
         <div class="card">
             <strong>RevenueCat</strong>
             <p>
-                Manages premium subscription purchases and restores. RevenueCat receives your
-                app user ID and purchase receipts.
-                <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>
+                Manages premium subscription purchases, purchase receipts, and entitlement status.
+                <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>
             </p>
         </div>
 
         <div class="card">
             <strong>Google AdMob</strong>
             <p>
-                We show rewarded video ads so you can earn giveaway tickets. We request
-                <strong>non-personalized ads only</strong> — AdMob does not build an advertising
-                profile from your activity in Pocket Trader and we do not request the App
-                Tracking Transparency permission.
-                <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+                Provides rewarded video ads. Pocket Trader requests non-personalized ads only,
+                but AdMob may still process information necessary for ad delivery, fraud
+                prevention, reporting, and compliance.
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
             </p>
         </div>
 
         <div class="card">
-            <strong>Expo (Push Notifications)</strong>
+            <strong>Expo Push Notifications</strong>
             <p>
-                We use Expo's push notification service to deliver alerts. Your device push
-                token is stored on our servers and passed to Expo solely to deliver
-                notifications you have enabled.
-                <a href="https://expo.dev/privacy" target="_blank">expo.dev/privacy</a>
+                Helps deliver push notifications you enable, using device push tokens associated
+                with your account.
+                <a href="https://expo.dev/privacy" target="_blank" rel="noopener">expo.dev/privacy</a>
             </p>
         </div>
 
-        <!-- ── 4. Data Retention ── -->
-        <h3>4. Data Retention</h3>
+        <h3>5. Security</h3>
         <p>
-            Chat threads and their messages are automatically deleted 7 days after a trade is
-            closed. Trade listings remain until you delete them. Account data is retained while
-            your account is active. You may request deletion of your account and associated
-            data at any time by contacting us at the email below.
+            We use reasonable administrative, technical, and organizational measures designed
+            to protect personal information. No method of transmission or storage is perfectly
+            secure, so we cannot guarantee absolute security.
         </p>
 
-        <!-- ── 5. Children's Privacy ── -->
-        <h3>5. Children's Privacy</h3>
+        <h3>6. Data Retention</h3>
         <p>
-            Pocket Trader is not directed at children under 4. We do not knowingly collect
-            personal information from children under 4. If you believe a child has provided
-            us with personal data, please contact us and we will delete it promptly.
+            We keep account information while your account is active. Trade listings generally
+            remain until they are deleted, unlisted, or removed through account deletion. Chat
+            threads and messages are designed to be removed after the related trade period
+            closes. Some records may be retained or de-identified where reasonably necessary
+            for security, fraud prevention, legal compliance, dispute handling, or maintaining
+            the integrity of trade and giveaway records.
         </p>
 
-        <!-- ── 6. Your Rights ── -->
-        <h3>6. Your Rights</h3>
-        <p>You have the right to:</p>
+        <h3>7. Your Choices and Rights</h3>
         <ul>
-            <li>Access the personal data we hold about you</li>
-            <li>Request correction of inaccurate data</li>
-            <li>Request deletion of your account and data</li>
-            <li>Opt out of push notifications at any time in your device settings</li>
+            <li>You may update profile information in the app.</li>
+            <li>You may manage notification preferences in the app or through device settings.</li>
+            <li>You may request access, correction, or deletion of personal information.</li>
+            <li>You may delete your account in the app or request deletion by email.</li>
         </ul>
         <p>
-            To exercise any of these rights, email us at
+            To exercise privacy rights or make a privacy request, email
             <a href="mailto:pockettradersupport@gmail.com">pockettradersupport@gmail.com</a>.
+            We may need information sufficient to verify and process your request.
         </p>
 
-        <!-- ── 7. Changes ── -->
-        <h3>7. Changes to This Policy</h3>
+        <h3>8. Children's Privacy</h3>
         <p>
-            We may update this policy from time to time. The "Last updated" date at the top
-            will reflect any changes. Continued use of the app after changes are posted
-            constitutes your acceptance of the updated policy.
+            Pocket Trader is not intended for children under 13. We do not knowingly collect
+            personal information from children under 13. If you believe a child under 13 has
+            provided personal information to us, contact us and we will take appropriate steps
+            to delete it.
         </p>
 
-        <!-- ── 8. Contact ── -->
-        <h3>8. Contact Us</h3>
+        <h3>9. International Users</h3>
         <p>
-            If you have any questions about this Privacy Policy, please contact:<br /><br />
+            Pocket Trader is operated from the United States and uses service providers that
+            may process information in the United States or other countries. By using the app,
+            you understand that information may be processed outside your country of residence.
+        </p>
+
+        <h3>10. Changes to This Policy</h3>
+        <p>
+            We may update this Privacy Policy from time to time. The "Last updated" date above
+            will reflect the latest revision. Continued use of the app after an update means
+            the updated policy applies to your use going forward.
+        </p>
+
+        <h3>11. Contact</h3>
+        <p>
+            Questions about this Privacy Policy should be directed to:<br /><br />
             <strong>Pocket Trader</strong><br />
             <a href="mailto:pockettradersupport@gmail.com">pockettradersupport@gmail.com</a>
         </p>
@@ -328,178 +466,211 @@
 
     <hr class="section-divider" />
 
-    <!-- ════════════════════════════════════════════════════════════ -->
-    <!--                        TERMS OF USE                           -->
-    <!-- ════════════════════════════════════════════════════════════ -->
+    <section id="account-deletion">
+        <h2 class="section-heading">Account Deletion</h2>
+
+        <p>
+            You can request deletion of your Pocket Trader account and associated personal data
+            from inside the app or from outside the app.
+        </p>
+
+        <h3>In-App Deletion</h3>
+        <p>
+            Open Pocket Trader, go to <strong>Menu</strong>, choose
+            <strong>Delete Account</strong>, and confirm the deletion prompt. This begins the
+            account deletion process for the signed-in account.
+        </p>
+
+        <h3>Deletion by Email</h3>
+        <p>
+            If you cannot access the app, email
+            <a href="mailto:pockettradersupport@gmail.com">pockettradersupport@gmail.com</a>
+            with the subject line "Pocket Trader Account Deletion Request". Include enough
+            information for us to identify the account, such as the sign-in email address or
+            display name associated with the account.
+        </p>
+
+        <div class="note">
+            <p>
+                Deleting your Pocket Trader account does not automatically cancel an active
+                Apple App Store or Google Play subscription. Subscription cancellation must be
+                managed through the platform where the subscription was purchased.
+            </p>
+        </div>
+
+        <p>
+            When an account is deleted, we delete or de-identify personal account data unless
+            retention is reasonably necessary for legal compliance, security, fraud prevention,
+            dispute resolution, or other legitimate operational reasons.
+        </p>
+    </section>
+
+    <hr class="section-divider" />
+
     <section id="terms">
         <h2 class="section-heading">Terms of Use</h2>
 
         <p>
-            These Terms of Use ("Terms") govern your use of the Pocket Trader mobile
-            application ("the App"). By downloading, installing, or using the App, you agree to
-            be bound by these Terms. If you do not agree, do not use the App.
+            These Terms of Use ("Terms") govern your access to and use of the Pocket Trader
+            mobile application and related services ("Pocket Trader" or the "App"). By using
+            the App, you agree to these Terms. If you do not agree, do not use the App.
         </p>
 
-        <!-- ── 1. Acknowledgement ── -->
         <h3>1. Acknowledgement</h3>
         <p>
-            You acknowledge that these Terms are concluded between you and Pocket Trader (the
-            independent developer of the App), and not with Apple Inc. or Google LLC. Pocket
-            Trader, not Apple or Google, is solely responsible for the App and its content.
-            The App is licensed, not sold, to you for use only under the terms of this
-            license.
+            These Terms are between you and Pocket Trader, not Apple Inc. or Google LLC.
+            Pocket Trader is solely responsible for the App and its content, except as otherwise
+            provided by applicable app store terms. The App is licensed, not sold, to you.
         </p>
 
-        <!-- ── 2. Scope of License ── -->
-        <h3>2. Scope of License</h3>
+        <h3>2. Eligibility and Account Responsibility</h3>
         <p>
-            Pocket Trader grants you a non-transferable license to use the App on any
-            Apple-branded products that you own or control, subject to the Apple App Store
-            Usage Rules, or on any Android device that you own or control, subject to the
-            Google Play Terms of Service. You may not distribute, sell, rent, lease, lend, or
-            sublicense the App. You may not reverse-engineer, decompile, or disassemble the
-            App except to the extent expressly permitted by applicable law.
+            You are responsible for your account, the accuracy of information you provide, and
+            all activity that occurs through your account. You may not use Pocket Trader if you
+            are barred from using the App under applicable law or these Terms.
         </p>
 
-        <!-- ── 3. Consent to Use of Data ── -->
-        <h3>3. Consent to Use of Data</h3>
+        <h3>3. Scope of License</h3>
         <p>
-            You agree that Pocket Trader may collect and use technical data and related
-            information — including but not limited to device identifiers, usage information,
-            and account data you provide — to operate the App and provide its features. Full
-            details of what is collected and why are described in the
-            <a href="#privacy">Privacy Policy</a> above.
+            Pocket Trader grants you a limited, personal, non-transferable, revocable license
+            to use the App on devices you own or control, subject to these Terms and applicable
+            Apple App Store or Google Play terms. You may not sell, rent, lease, lend,
+            sublicense, copy, modify, reverse engineer, decompile, or disassemble the App
+            except to the extent applicable law expressly allows.
         </p>
 
-        <!-- ── 4. Termination ── -->
-        <h3>4. Termination</h3>
+        <h3>4. User Content and Conduct</h3>
         <p>
-            This license is effective until terminated by you or by Pocket Trader. Your rights
-            under this license will terminate automatically without notice if you fail to
-            comply with any term of these Terms. You may delete your account and terminate
-            this license at any time from within the App (Menu → Delete Account). Upon
-            termination, you must cease all use of the App.
+            You are responsible for content you create, submit, or transmit through Pocket
+            Trader, including listings, messages, feedback, and suggestions. You agree not to
+            submit content or use the App in a way that is illegal, abusive, harassing,
+            threatening, defamatory, fraudulent, sexually explicit, infringing, spammy, or
+            harmful to other users or the App.
         </p>
-
-        <!-- ── 5. External Services ── -->
-        <h3>5. External Services and Third-Party Content</h3>
         <p>
-            The App may enable access to third-party services and content, including but not
-            limited to Supabase (backend), RevenueCat (subscriptions), Expo (push
-            notifications), Google AdMob (advertising), and Google or Apple sign-in providers.
-            You agree to use these services at your own risk. Pocket Trader is not responsible
-            for examining or evaluating the content or accuracy of any third-party service and
-            shall not be liable for any third-party services or content.
+            We may remove content, limit features, suspend accounts, or terminate access if we
+            believe a user has violated these Terms, created risk for other users, or misused
+            the App.
         </p>
 
-        <!-- ── 6. No Warranty ── -->
-        <h3>6. No Warranty</h3>
+        <h3>5. Trades and Virtual Goods</h3>
         <p>
-            YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE APP IS AT YOUR SOLE RISK. TO
-            THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE APP IS PROVIDED "AS IS" AND
-            "AS AVAILABLE", WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND. POCKET TRADER
-            DISCLAIMS ALL WARRANTIES WITH RESPECT TO THE APP, EITHER EXPRESS, IMPLIED, OR
-            STATUTORY, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
-            FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT OF THIRD-PARTY
-            RIGHTS.
+            Pocket Trader is a coordination tool. Trades arranged through the App are completed
+            by users themselves inside Pokémon TCG Pocket using in-game systems and friend
+            codes. Pocket Trader does not transfer cards, hold in-game inventory, control
+            Pokémon TCG Pocket accounts, or guarantee that another user will complete a trade.
+            You use trade listings, offers, chats, and related coordination features at your
+            own risk.
         </p>
 
-        <!-- ── 7. Limitation of Liability ── -->
-        <h3>7. Limitation of Liability</h3>
+        <h3>6. Giveaways</h3>
         <p>
-            TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL POCKET TRADER BE LIABLE FOR
-            PERSONAL INJURY OR ANY INCIDENTAL, SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES
-            WHATSOEVER, INCLUDING WITHOUT LIMITATION DAMAGES FOR LOSS OF PROFITS, LOSS OF
-            DATA, BUSINESS INTERRUPTION, OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING
-            OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, HOWEVER CAUSED.
+            Pocket Trader may offer app-based giveaways or ticket features. Giveaway
+            availability, rules, rewards, timing, and eligibility may vary. We may modify,
+            suspend, or cancel a giveaway feature where needed for technical, security, legal,
+            or abuse-prevention reasons.
         </p>
 
-        <!-- ── 8. User Content & Conduct ── -->
-        <h3>8. User Content and Conduct</h3>
+        <h3>7. Subscriptions and Purchases</h3>
         <p>
-            You are solely responsible for any content you create or transmit through the App,
-            including listings, chat messages, feedback, and translation suggestions. You
-            agree not to post or transmit any content that is illegal, abusive, harassing,
-            threatening, defamatory, fraudulent, sexually explicit, or that infringes any
-            third party's rights. Pocket Trader reserves the right to remove any content and
-            to suspend or terminate accounts that violate these Terms, at its sole discretion
-            and without notice.
+            Premium features may be offered through auto-renewing subscriptions billed by the
+            Apple App Store or Google Play. The subscription name, duration, price, renewal
+            terms, and available features are shown in the purchase flow before purchase.
+            Unless cancelled, subscriptions renew automatically at the end of each billing
+            period according to the terms of the platform where purchased.
         </p>
-
-        <!-- ── 9. Trades and Virtual Goods ── -->
-        <h3>9. Trades and Virtual Goods</h3>
         <p>
-            Pocket Trader is a coordination tool. Listings and trades arranged through the App
-            are completed by users themselves inside the Pokémon TCG Pocket game using
-            in-game friend codes. Pocket Trader does not transfer cards on your behalf, holds
-            no in-game inventory, and has no control over whether the other party completes
-            their side of a trade. You agree that Pocket Trader is not responsible or liable
-            for the outcome of any trade arranged through the App.
+            You can manage or cancel a subscription through your Apple App Store or Google Play
+            subscription settings. Cancellation generally takes effect at the end of the current
+            billing period unless the platform or applicable law provides otherwise. Refunds are
+            handled by the platform where the purchase was made, subject to that platform's
+            policies and applicable law. Deleting a Pocket Trader account or uninstalling the
+            App does not automatically cancel a subscription.
         </p>
 
-        <!-- ── 10. Subscriptions ── -->
-        <h3>10. Subscriptions</h3>
+        <h3>8. Privacy</h3>
         <p>
-            Premium tiers are auto-renewing subscriptions billed through the Apple App Store
-            or Google Play. Your subscription will automatically renew at the end of each
-            billing period unless cancelled at least 24 hours before the end of the current
-            period. You can manage or cancel your subscription at any time in your platform's
-            subscription settings (App Store or Google Play). Refunds are governed by the
-            policies of the platform from which you purchased the subscription.
+            Our collection and use of information is described in the
+            <a href="#privacy">Privacy Policy</a>. By using Pocket Trader, you acknowledge
+            that information will be handled as described there.
         </p>
 
-        <!-- ── 11. Intellectual Property ── -->
-        <h3>11. Intellectual Property</h3>
+        <h3>9. Third-Party Services and Content</h3>
         <p>
-            Pokémon, Pokémon TCG Pocket, and all related names, logos, characters, and images
-            are trademarks of Nintendo, The Pokémon Company, Creatures Inc., and GAME FREAK.
-            Pocket Trader is an independent fan-made tool and is not affiliated with,
-            endorsed by, or sponsored by any of these entities. All other trademarks
-            referenced in the App are the property of their respective owners.
+            The App may rely on or link to third-party services, including authentication,
+            hosting, push notification, advertising, purchase, and platform services. Third-party
+            services are governed by their own terms and policies. Pocket Trader is not
+            responsible for third-party services, content, or policies.
         </p>
 
-        <!-- ── 12. Export Compliance ── -->
-        <h3>12. Export Compliance</h3>
+        <h3>10. Intellectual Property</h3>
         <p>
-            You may not use or otherwise export or re-export the App except as authorized by
-            United States law and the laws of the jurisdiction in which the App was obtained.
-            In particular, but without limitation, the App may not be exported or re-exported
-            into any U.S.-embargoed countries or to anyone on the U.S. Treasury Department's
-            Specially Designated Nationals List or the U.S. Department of Commerce Denied
-            Persons List or Entity List. By using the App, you represent and warrant that you
-            are not located in any such country or on any such list.
+            Pocket Trader and its original content, design, and software are owned by Pocket
+            Trader or its licensors. Pokémon, Pokémon TCG Pocket, and related names, logos,
+            characters, and images are trademarks or property of Nintendo, The Pokémon Company,
+            Creatures Inc., GAME FREAK, or their respective owners. Pocket Trader is an
+            independent fan-made tool and is not affiliated with, endorsed by, or sponsored by
+            those entities.
         </p>
 
-        <!-- ── 13. Commercial Items ── -->
-        <h3>13. Commercial Items</h3>
+        <h3>11. Termination</h3>
         <p>
-            The App and related documentation are "Commercial Items", as that term is defined
-            at 48 C.F.R. §2.101, consisting of "Commercial Computer Software" and "Commercial
-            Computer Software Documentation", as such terms are used in 48 C.F.R. §12.212 or
-            48 C.F.R. §227.7202, as applicable.
+            You may stop using the App at any time and may request account deletion as described
+            in the <a href="#account-deletion">Account Deletion</a> section. We may suspend or
+            terminate access if you violate these Terms or if continued access would create
+            legal, security, operational, or user-safety risk. Upon termination, you must stop
+            using the App.
         </p>
 
-        <!-- ── 14. Governing Law ── -->
-        <h3>14. Governing Law</h3>
+        <h3>12. No Warranty</h3>
         <p>
-            These Terms are governed by the laws of the State of California, USA, excluding
-            its conflict-of-laws rules. The United Nations Convention on Contracts for the
-            International Sale of Goods is expressly excluded.
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, POCKET TRADER IS PROVIDED "AS IS" AND
+            "AS AVAILABLE", WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR
+            STATUTORY, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+            PURPOSE, TITLE, ACCURACY, AVAILABILITY, AND NON-INFRINGEMENT. WE DO NOT WARRANT
+            THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR AVAILABLE AT ALL TIMES.
         </p>
 
-        <!-- ── 15. Third-Party Beneficiary (Apple) ── -->
-        <h3>15. Third-Party Beneficiary (Apple)</h3>
+        <h3>13. Limitation of Liability</h3>
         <p>
-            You acknowledge and agree that Apple Inc. and its subsidiaries are third-party
-            beneficiaries of these Terms with respect to the App Store version of the App,
-            and that, upon your acceptance of these Terms, Apple will have the right (and
-            will be deemed to have accepted the right) to enforce these Terms against you as
-            a third-party beneficiary thereof. Apple has no obligation whatsoever to provide
-            any maintenance or support services with respect to the App.
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, POCKET TRADER WILL NOT BE LIABLE FOR ANY
+            INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR
+            FOR LOSS OF PROFITS, DATA, GOODWILL, OR OTHER INTANGIBLE LOSSES, ARISING FROM OR
+            RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, ANY USER CONDUCT, ANY TRADE
+            OUTCOME, OR ANY THIRD-PARTY SERVICE.
         </p>
 
-        <!-- ── 16. Contact ── -->
-        <h3>16. Contact</h3>
+        <h3>14. Export Compliance</h3>
+        <p>
+            You may not use, export, or re-export the App except as authorized by United States
+            law and the laws of the jurisdiction where the App was obtained. You represent that
+            you are not located in a U.S.-embargoed country and are not on any U.S. government
+            restricted-party list.
+        </p>
+
+        <h3>15. Governing Law</h3>
+        <p>
+            These Terms are governed by the laws of the State of California, USA, excluding its
+            conflict-of-laws rules. The United Nations Convention on Contracts for the
+            International Sale of Goods is excluded.
+        </p>
+
+        <h3>16. Apple App Store Terms</h3>
+        <p>
+            For the iOS version of the App, Apple and its subsidiaries are third-party
+            beneficiaries of these Terms and may enforce these Terms against you as third-party
+            beneficiaries. Apple has no obligation to provide maintenance or support services
+            for the App.
+        </p>
+
+        <h3>17. Changes to These Terms</h3>
+        <p>
+            We may update these Terms from time to time. The "Last updated" date above will
+            reflect the latest revision. Continued use of the App after updated Terms are
+            posted means you accept the updated Terms.
+        </p>
+
+        <h3>18. Contact</h3>
         <p>
             Questions about these Terms should be directed to:<br /><br />
             <strong>Pocket Trader</strong><br />
@@ -509,8 +680,8 @@
 
     <footer>
         &copy; 2026 Pocket Trader. Pocket Trader is not affiliated with, endorsed by, or
-        sponsored by Nintendo, The Pokémon Company, or Creatures Inc. Pokémon and all
-        related names are trademarks of their respective owners.
+        sponsored by Nintendo, The Pokémon Company, Creatures Inc., GAME FREAK, or Pokémon
+        TCG Pocket. Pokémon and related names are trademarks of their respective owners.
     </footer>
 
 </div>
